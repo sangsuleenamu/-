@@ -106,7 +106,7 @@ for j in url:
     csv_table = pd.DataFrame(result, columns=(['리뷰']))
     
     # pandas를 csv 파일로 추출
-    csv_table.to_csv(str(apart[crawling_num]), encoding='utf-8-sig', mode='a',header=True, index=True)
+    csv_table.to_csv(''+apart[crawling_num]+'.csv', encoding='utf-8-sig', mode='a',header=True, index=True)
     print(result)
     
     crawling_num+=1
