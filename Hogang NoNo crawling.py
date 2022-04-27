@@ -40,8 +40,8 @@ def getApartment(url, result):
     tel_login.click()
     time.sleep(1)
     
-    #아이디_비번 넣고 로그인
-    wd.find_element_by_css_selector('div.css-70j7w6 > input.css-14q5jb5').send_keys('id')
+    #전화번호_비번 넣고 로그인
+    wd.find_element_by_css_selector('div.css-70j7w6 > input.css-14q5jb5').send_keys('tel')
     wd.find_element_by_css_selector('div.css-1t8nnu8 > input.css-14q5jb5').send_keys('password')
     login_bt = wd.find_element_by_css_selector('div.css-1enkzm8 > form > a')
     login_bt.click() 
